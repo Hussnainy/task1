@@ -1,0 +1,56 @@
+:root {
+    --green: #00FF00;
+    --white: #FFFFFF;
+    --black: #000000;
+  }
+  
+  body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  
+  li {
+    list-style: circle;
+  }
+  
+  .list {
+    list-style: square;
+  }
+  
+  .light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--green);
+  }
+  
+  .dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--green);
+    --btnFontColor: var(--black);
+  }
+  
+  .theme-button {
+    background-color: var(--btnBg);
+    color: var(--btnFontColor);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Media queries */
+  @media (min-width: 768px) {
+    body {
+      font-size: 1.8rem;
+    }
+    /* Add more styles for medium screens */
+  }
+  
+  @media (min-width: 992px) {
+    /* Add more styles for large screens */
+  }
+  
